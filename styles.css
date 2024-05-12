@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+hr {
+  border-color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#filters-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+select,
+input[type="date"],
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+textarea {
+  display: block;
+  width: calc(100% - 20px);
+  height: calc(6 * 1.2em); 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: none;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.dataTables_filter {
+  margin-bottom: 20px;
+}
+
+.dataTables_paginate {
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.dataTables_paginate .paginate_button {
+  padding: 5px 10px;
+  margin: 0 2px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dataTables_paginate .paginate_button:hover {
+  background-color: #f2f2f2;
+}
