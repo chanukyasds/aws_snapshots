@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDS Snapshots</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <h2>Snapshot Identifiers</h2>
+    <hr>
+    <div id="filters-container">
+      <label for="serviceFilter">Service:</label>
+      <select id="serviceFilter">
+        <option value="all">All</option>
+      </select>
+      
+      <label for="dbFilter">DB Instance:</label>
+      <select id="dbFilter">
+        <option value="all">All</option>
+      </select>
+
+      <label for="dateFilter">Date:</label>
+      <input type="date" id="dateFilter">
+      
+      <button id="clearFilters">Clear Filters</button>
+    </div>
+
+    <table id="snapshotTable" class="display">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Service</th>
+          <th>DB Instance</th>
+          <th>Snapshot ID</th>
+          <th>Created Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="centered-container">
+      <button id="generateButton">Generate Manifest</button>
+      <textarea id="textToCopy" rows="4" readonly></textarea>
+      <button id="copyButton">Copy</button>
+      <button id="downloadButton">Download</button> 
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
